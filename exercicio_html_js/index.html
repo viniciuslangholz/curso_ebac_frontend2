@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EBAC - Formulário com JS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
@@ -16,16 +17,25 @@
   <script src="./assets/js/index.js"></script>
 </head>
 <body>
-  <header>EBAC - Exercício do módulo 7</header>
-  <h1>Validação entre campos:</h2>
+  <header>
+    EBAC - Exercício do módulo 7
+  </header>
 
-  <form>
-    <label for="campoA">Digite um número: </label><br>
-    <input type="number" id="campoA" name="campoA"><br>
-    <label for="campoB">Digite outro número: </label><br>
-    <input type="number" id="campoB" name="campoB"><br>
-    <button type="submit">Processar valores</button>
-  </form>
+  <div class="bar"></div>
+  
+  <h1>Validação entre campos:</h1>
+
+  <div class="form">
+    <form>
+      <div class="form-campos">
+        <label for="campoA" placeholder="Campo A">Campo A:</label>
+        <input type="number" id="campoA" placeholder="Digite um número" name="campoA">
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" placeholder="Digite um número" name="campoB">
+      </div>
+      <button class="btn" type="submit"><i class="fa fa-calculator"></i> Processar valores</button>
+    </form>
+  </div>
 
 </body>
 </html>
